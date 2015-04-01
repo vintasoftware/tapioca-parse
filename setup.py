@@ -12,14 +12,21 @@ import os
 import sys
 
 
+try:
+    import pypandoc
+    readme = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+    readme = ''
+
+
 package = 'tapioca_parse'
-readme = open('README.rst').read()
 requirements = [
     'tapioca-wrapper==0.2.1',
 ]
 test_requirements = [
 
 ]
+
 
 def get_version(package):
     """
@@ -55,13 +62,12 @@ setup(
     install_requires=requirements,
     license="BSD",
     zip_safe=False,
-    keywords='tapioca-parse',
+    keywords='parse,tapioca,wrapper,api',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.7',
     ],
     test_suite='tests',
