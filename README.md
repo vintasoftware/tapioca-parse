@@ -15,7 +15,7 @@ pip install tapioca-parse
 ``` python
 from tapioca_parse import Parse
 
-api = Parse(key='{your-api-key}')
+api = Parse(application_id='{your-application-id}', rest_api_key='{your-rest-api-key}')
 ```
 
 No more documentation needed.
