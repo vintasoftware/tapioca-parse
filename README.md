@@ -1,13 +1,11 @@
 # Tapioca Parse
 
 ## Instalation
-
+```
 pip install tapioca-parse
+```
 
 ## Documentation
-
-### Initializing
-
 ``` python
 from tapioca_parse import Parse
 
