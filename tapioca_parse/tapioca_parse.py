@@ -24,7 +24,7 @@ class ParseClientAdapter(TapiocaAdapter):
         return response_data.get('results')
 
     def get_iterator_next_request_kwargs(self,
-            iterator_request_kwargs, response_data):
+            iterator_request_kwargs, response_data, response):
         limit = 100
         params = iterator_request_kwargs.get('params', {'limit': limit, 'skip': -limit})
         params['skip'] = params['limit'] + params['skip']
