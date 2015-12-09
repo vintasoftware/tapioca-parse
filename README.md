@@ -14,6 +14,6 @@ api = Parse(application_id='{your-application-id}', rest_api_key='{your-rest-api
 
 No more documentation needed.
 
-- Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/latest/quickstart/)
+- Learn how Tapioca works [here](http://tapioca-wrapper.readthedocs.org/en/stable/quickstart.html)
 - Explore this package using iPython
 - Have fun!
